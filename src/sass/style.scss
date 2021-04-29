@@ -1,5 +1,5 @@
-$main-color: #FF7766;
-$custom-color: #EEE;
+@import './projects.scss';
+@import './variable';
 
 @font-face {
     font-family: "cairoFont";
