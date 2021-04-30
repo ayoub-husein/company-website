@@ -18,7 +18,6 @@ $(function() {
     );
 
     var pathname = window.location.pathname; //احضار المسار المتواجدين فيه
-    console.log(pathname)
     $('.navbar-nav > li > a[href="'+pathname+'"]').parent().addClass('active');
 
     //إضافة الصنف الفعال للصفخات المتعلقة بصفحة المشروع
