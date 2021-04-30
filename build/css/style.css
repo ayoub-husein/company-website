@@ -10446,6 +10446,28 @@ a.text-dark:focus, a.text-dark:hover {
     margin-right: 15px;
   }
 }
+.banner-blog .banner-img {
+  background-image: url(../images/banner-blog.jpg);
+}
+
+.posts .search-box {
+  padding: 15px;
+  margin-top: 5px;
+  box-shadow: 0 1px 1px 1px #EEE;
+  border: 1px solid #EEE;
+}
+.posts .card .card-body .card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #a9a9a9;
+}
+
+.form-control:focus {
+  border-color: #FF7766 !important;
+  box-shadow: none !important;
+}
+
 @font-face {
   font-family: "cairoFont";
   src: url(../fonts/Cairo-Regular.ttf);

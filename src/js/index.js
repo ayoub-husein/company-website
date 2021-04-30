@@ -5,6 +5,7 @@ import 'popper.js/dist/popper.min'
 import '../sass/style.scss'
 import '@fortawesome/fontawesome-free/js/all.min'
 
+
 $(function() {
     $('.thambnail-2').hover(function(){
         $(this).find('.project-category').hide();
