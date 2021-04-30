@@ -70,11 +70,11 @@ module.exports = {
 
     devServer: {
       contentBase: path.join(__dirname, 'build'),
-      // compress: true,
+      compress: true,
       port: 9000,
       writeToDisk: true,
       stats: 'errors-only',
-      // open: true,
+      open: true,
     },
 
     plugins: [

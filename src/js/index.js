@@ -17,8 +17,21 @@ $(function() {
     }
     );
 
-    let modalId = $('#image-gallery');
+    var pathname = window.location.pathname; //احضار المسار المتواجدين فيه
+    console.log(pathname)
+    $('.navbar-nav > li > a[href="'+pathname+'"]').parent().addClass('active');
 
+    //إضافة الصنف الفعال للصفخات المتعلقة بصفحة المشروع
+    if(pathname == "/project-details.html") {
+      $('.navbar-nav > li > a[href="/projects.html"]').parent().addClass('active');
+    }
+    
+    //إضافة الصنف الفعال للصفخات المتعلقة بصفحة المدونة
+    if(pathname == "/blog-details.html" || pathname == "/add-blog.html") {
+      $('.navbar-nav > li > a[href="/blog.html"]').parent().addClass('active');
+    }
+
+    //gallery
     loadGallery(true, 'a.thumbnail');
 
     //This function disables buttons when needed
